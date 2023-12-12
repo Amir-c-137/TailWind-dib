@@ -16,7 +16,7 @@
             <img src="./Najm/1.header/logo.png" alt="Logo" class="z-10"> 
           </div>  
           <div class="text-center pt-8">
-            <h1  class="text-4xl font-bold text-white">
+            <h1  class="text-4xl font-bold text-white w-2/5 mx-auto">
               ما 
               <span class="text-yellow-500">
                 رهبران 
@@ -30,6 +30,29 @@
             </p>
           </div>
           <button class="bg-white text-black border border-gray-300 px-4 py-2 rounded-md mx-auto my-6">بیشتر...</button>
+
+                  <!-- The menu here -->
+    <div id="side-menu" class="fixed top-0 left-[-250px] w-[240px] h-screen z-50 bg-gray-700 p-5
+    flex flex-col space-y-5 text-white duration-300">
+        <a href="javascript:void(0)" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
+        <a class="hover:text-amber-500" href="#">Home</a>
+        <a class="hover:text-amber-500" href="#">About Us</a>
+        <a class="hover:text-amber-500" href="#">Services</a>
+        <a class="hover:text-amber-500" href="#">Products</a>
+        <a class="hover:text-amber-500" href="#">Projects</a>
+        <a class="hover:text-amber-500" href="#">Customers</a>
+        <a class="hover:text-amber-500" href="#">News</a>
+        <a class="hover:text-amber-500" href="#">Gallery</a>
+        <a class="hover:text-amber-500" href="#">Contact Us</a>
+    </div>
+
+    <main class="p-5">
+        <!-- This is used to open the menu -->
+        <span class="cursor-pointer absolute text-4xl top-0 left-0 p-5 sm:hidden" onclick="openMenu()">&#9776;</span>
+    </main>
+
+
+
         </div>
     </div>
   </header>
@@ -38,5 +61,6 @@
   <main class="min-h-screen">
 
   </main>
+  <script src="./script.js"></script>
 </body>
 </html>
