@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'nazanin';
+    src: url('./B_NAZANIN/B-NAZANIN.TTF') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lalezar';
+    src: url('./Lalezar-Font/TTF/Lalezar-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('./Vazirmatn/Vazirmatn-VariableFont_wght.ttf');
+}
+
+*{
+    font-family: 'Vazirmatn' !important;
+}
