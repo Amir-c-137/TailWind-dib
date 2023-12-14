@@ -53,26 +53,120 @@
         </div>
     </div>
   </header>
-  <ul class="flex">
+  <!-- <ul class="justify-center shadow-md gap-0 md md:gap-3 lg:gap-6 hidden sm:flex">
     <li class="mr-3">
-      <a class="inline-block border border-blue-500 rounded py-1 px-3 bg-blue-500 text-white" href="#">Active Pill</a>
+      <a class="inline-block border border-blue-500 rounded py-1 px-3 bg-blue-500 text-white" href="#">خانه</a>
     </li>
     <li class="mr-3">
-      <a class="inline-block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-1 px-3" href="#">Pill</a>
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-not-allowed whitespace-nowrap" href="#">درباره ما</a>
     </li>
     <li class="mr-3">
-      <a class="inline-block py-1 px-3 text-gray-400 cursor-not-allowed" href="#">خانه</a>
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-not-allowed" href="#">خدمات</a>
     </li>
     <li class="mr-3">
-      <a class="inline-block py-1 px-3 text-gray-400 cursor-not-allowed" href="#">درباره ما</a>
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-not-allowed" href="#">محصولات</a>
     </li>
     <li class="mr-3">
-      <a class="inline-block py-1 px-3 text-gray-400 cursor-not-allowed" href="#">Disabled Pill</a>
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-not-allowed whitespace-nowrap" href="#">پروژه ها</a>
     </li>
     <li class="mr-3">
-      <a class="inline-block py-1 px-3 text-gray-400 cursor-not-allowed" href="#">Disabled Pill</a>
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-not-allowed" href="#">مشتریان</a>
     </li>
-  </ul>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-not-allowed" href="#">اخبار</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-not-allowed" href="#">گالری</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-not-allowed whitespace-nowrap" href="#">تماس با ما</a>
+    </li>
+  </ul> -->
+
+  <ul class="justify-center shadow-md gap-0 md md:gap-3 lg:gap-6 hidden sm:flex" id="menu">
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-pointer whitespace-nowrap" href="#" onclick="showContent('home')">خانه</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-pointer whitespace-nowrap" href="#" onclick="showContent('about')">درباره ما</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-pointer whitespace-nowrap" href="#" onclick="showContent('services')">خدمات</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-pointer whitespace-nowrap" href="#" onclick="showContent('products')">محصولات</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-pointer whitespace-nowrap" href="#" onclick="showContent('projects')">پروژه ها</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-pointer whitespace-nowrap" href="#" onclick="showContent('customers')">مشتریان</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-pointer whitespace-nowrap" href="#" onclick="showContent('news')">اخبار</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-pointer whitespace-nowrap" href="#" onclick="showContent('gallery')">گالری</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-1 text-gray-500 cursor-pointer whitespace-nowrap" href="#" onclick="showContent('contact')">تماس با ما</a>
+    </li>
+</ul>
+
+<div id="homeContent" class="content hidden">
+  <!-- Content for the "خانه" button -->
+  <h2>محتوای صفحه خانه</h2>
+  <p>این ممکن است محتوای صفحه خانه شما باشد.</p>
+</div>
+
+<div id="aboutContent" class="content hidden">
+  <!-- Content for the "درباره ما" button -->
+  <h2>محتوای صفحه درباره ما</h2>
+  <p>این ممکن است محتوای صفحه درباره ما شما باشد.</p>
+</div>
+<div id="servicesContent" class="content hidden">
+  <!-- Content for the "خدمات" button -->
+  <h2>محتوای صفحه خدمات</h2>
+  <p>این ممکن است محتوای صفحه خدمات شما باشد.</p>
+</div>
+
+<div id="productsContent" class="content hidden">
+  <!-- Content for the "محصولات" button -->
+  <h2>محتوای صفحه محصولات</h2>
+  <p>این ممکن است محتوای صفحه محصولات شما باشد.</p>
+</div>
+
+<div id="projectsContent" class="content hidden">
+  <!-- Content for the "پروژه ها" button -->
+  <h2>محتوای صفحه پروژه ها</h2>
+  <p>این ممکن است محتوای صفحه پروژه ها شما باشد.</p>
+</div>
+
+<div id="customersContent" class="content hidden">
+  <!-- Content for the "مشتریان" button -->
+  <h2>محتوای صفحه مشتریان</h2>
+  <p>این ممکن است محتوای صفحه مشتریان شما باشد.</p>
+</div>
+
+<div id="newsContent" class="content hidden">
+  <!-- Content for the "اخبار" button -->
+  <h2>محتوای صفحه اخبار</h2>
+  <p>این ممکن است محتوای صفحه اخبار شما باشد.</p>
+</div>
+
+<div id="galleryContent" class="content hidden">
+  <!-- Content for the "گالری" button -->
+  <h2>محتوای صفحه گالری</h2>
+  <p>این ممکن است محتوای صفحه گالری شما باشد.</p>
+</div>
+
+<div id="contactContent" class="content hidden">
+  <!-- Content for the "تماس با ما" button -->
+  <h2>محتوای صفحه تماس با ما</h2>
+  <p>این ممکن است محتوای صفحه تماس با ما شما باشد.</p>
+</div>
+
+
 
   <!-- Rest of your website content -->
   <main class="min-h-screen">
