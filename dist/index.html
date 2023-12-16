@@ -85,9 +85,6 @@
 
   <ul class="justify-center shadow-md gap-0 md md:gap-3 lg:gap-6 hidden sm:flex" id="menu">
     <li class="mr-3">
-      <a class="inline-block py-1 px-1 text-gray-500 cursor-pointer whitespace-nowrap" href="#" onclick="showContent('home')">خانه</a>
-    </li>
-    <li class="mr-3">
       <a class="inline-block py-1 px-1 text-gray-500 cursor-pointer whitespace-nowrap" href="#" onclick="showContent('about')">درباره ما</a>
     </li>
     <li class="mr-3">
@@ -113,29 +110,30 @@
     </li>
 </ul>
 
-<div id="homeContent" class="content">
-  <!-- Content for the "خانه" button -->
 
-  <h2>محتوای صفحه خانه</h2>
-  <p>این ممکن است محتوای صفحه خانه شما باشد.</p>
-</div>
-
-<div id="aboutContent" class="content hidden">
+<div id="aboutContent" class="content flex items-center">
   <!-- Content for the "درباره ما" button -->
-  <img src="./Najm/2.about-us/About Us.png" alt="AboutUs img">
-  <h2>محتوای صفحه درباره ما</h2>
-  <p>این ممکن است محتوای صفحه درباره ما شما باشد.</p>
+  <div class="items-start flex max-sm:flex-col max-sm:mx-auto px-10">
+    <img src="./Najm/2.about-us/About Us.png" alt="AboutUs img" class="pr-0 md:pr-18 py-10 w-[420px] lg:w-[650px] h-auto filter grayscale md:w-[500px]">
+    <div class="mt-auto pb-10 md:ml-0 w-fit">
+      <h2 class="px-3 md:px-6 text-3xl text-blue-900 mt-auto">درباره ما</h2>
+      <p class="px-3 md:px-6 pt-3 text-xs max-w-[40ch] md:max-w-[80ch] mt-auto md:text-xs lg:text-sm">
+        گروه ما، یک تیم پویا و متخصص در حوزه‌ی فناوری و نوآوری است. افتخار داریم که با تجربه و دانش گسترده تیم ما، به ارائه راهکارهایی پیشرو و خدمات فناوری برتر به مشتریان خود می‌پردازیم. با افتخار و اعتماد به نفس، به طراحی و توسعه‌ی پروژه‌هایی که نیازهای فنی را برآورده می‌کنند، می‌پردازیم.
+      </p>
+    </div>
+  </div>
 </div>
+
 <div id="servicesContent" class="content hidden">
   <!-- Content for the "خدمات" button -->
-  <img src="./Najm/2.about-us/About Us.png" alt="AboutUs img">
+  <img src="./Najm/" alt="AboutUs img">
   <h2>محتوای صفحه خدمات</h2>
   <p>این ممکن است محتوای صفحه خدمات شما باشد.</p>
 </div>
 
 <div id="productsContent" class="content hidden">
   <!-- Content for the "محصولات" button -->
-  <img src="./Najm/2.about-us/About Us.png" alt="AboutUs img">
+  <img src="./Najm/3.product/" alt="AboutUs img">
   <h2>محتوای صفحه محصولات</h2>
   <p>این ممکن است محتوای صفحه محصولات شما باشد.</p>
 </div>
