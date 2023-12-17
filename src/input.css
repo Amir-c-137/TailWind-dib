@@ -25,4 +25,5 @@
 
 *{
     font-family: 'Vazirmatn' !important;
+    scroll-behavior: smooth;
 }

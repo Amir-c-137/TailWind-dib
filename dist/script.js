@@ -9,14 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function showContent(contentId) {
-  // Hide all content divs
-  const allContent = document.querySelectorAll('.content');
-  allContent.forEach(content => content.classList.add('hidden'));
-
-  // Show the selected content
+  // Scroll to the selected content
   const selectedContent = document.getElementById(`${contentId}Content`);
   if (selectedContent) {
-    selectedContent.classList.remove('hidden');
+    selectedContent.scrollIntoView({ behavior: 'smooth' });
   }
 
   // Remove the blue border from all menu items
